@@ -8,11 +8,11 @@ class Container extends Component {
   render() {
     return(
       <div>
-        <Snackname='Chips'/>
-        <Snackname='Cupcake'/>
-        <Snackname='Donut'/>
-        <Snackname='Doritos'/>
-        <Snackname='Popcorn'/>
+        <Snack name='Chips'/>
+        <Snack name='Cupcake'/>
+        <Snack name='Donut'/>
+        <Snack name='Doritos'/>
+        <Snack name='Popcorn'/>
         <ShoppingCart/>
       </div>
     );

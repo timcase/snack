@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { DropTarget } from 'react-dnd';
 
 const ShoppingCartSpec = {
@@ -21,14 +21,14 @@ class ShoppingCart extends Component {
     const { canDrop, isOver, connectDropTarget } = this.props;
     const isActive = canDrop && isOver;
     let backgroundColor = '#ffffff';
-    if(isActive) {
-      backgroundColor='#f7f7bd';
-    } else if(canDrop) {
-      backgroundColor='#f7f7f7';
+    if (isActive) {
+      backgroundColor = '#f7f7bd';
+    } else if (canDrop) {
+      backgroundColor = '#f7f7f7';
     }
 
     const style = {
-      backgroundColor: backgroundColor;
+      backgroundColor: backgroundColor
     };
 
     return connectDropTarget(
